@@ -898,7 +898,10 @@ textarea:focus {
   .single-blog-area .blog-content {
     position: relative;
     z-index: 1;
-    padding-top: 40px; }
+    padding: 15px;
+    padding-top: 40px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.65); }
     .single-blog-area .blog-content .post-title {
       font-size: 22px;
       color: #474747;
@@ -1384,8 +1387,14 @@ textarea:focus {
   display: block;
   position: absolute;
   z-index: 101;
-  height: 29%;
+  height: 15%;
   transform: translate(-50%, -50%); }
+  @media only screen and (max-width: 600px) {
+    #spider-web {
+      height: 9%; } }
+  @media only screen and (max-width: 800px) {
+    #spider-web {
+      height: 9%; } }
 
 #spider {
   display: block;
@@ -1393,5 +1402,23 @@ textarea:focus {
   z-index: 102;
   height: 56px;
   left: 8px; }
+
+@media only screen and (max-width: 500px) {
+  #spider, #spider-web, #tela {
+    display: none; } }
+body {
+  background-image: url(img/fondos/fondo-fantasma.jpg);
+  background-size: 225px;
+  position: relative; }
+  body:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    opacity: 0.8; }
 
 /*# sourceMappingURL=style.css.map */
