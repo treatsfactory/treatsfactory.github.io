@@ -399,7 +399,7 @@ textarea:focus {
     background-color: $white-color;
     &.active,
     &:hover,
-    &:focus {
+        &:focus {
         font-size: 16px;
         font-weight: 600;
         color: $white-color;
@@ -411,7 +411,7 @@ textarea:focus {
         border-color: $bg-default;
         &.active,
         &:hover,
-        &:focus {
+            &:focus {
             background-color: $bg-default;
             border-color: $border-color;
         }
@@ -421,7 +421,7 @@ textarea:focus {
         border-color: $border-color;
         &.active,
         &:hover,
-        &:focus {
+            &:focus {
             background-color: $bg-default;
             border-color: $border-color;
         }
@@ -437,7 +437,7 @@ textarea:focus {
         }
         &.active,
         &:hover,
-        &:focus {
+            &:focus {
             line-height: 53px;
             color: $white-color;
             background-color: $bg-default;
@@ -548,7 +548,7 @@ textarea:focus {
                             color: #b6b6b6;
                             font-style: italic;
                             &:hover,
-                            &:focus {
+                                &:focus {
                                 color: $hover-color;
                             }
                         }
@@ -566,8 +566,8 @@ textarea:focus {
                     margin-right: 0;
                 }
                 &:hover,
-                &:focus,
-                &.active {
+                    &:focus,
+                    &.active {
                     color: $hover-color;
                 }
             }
@@ -593,7 +593,7 @@ textarea:focus {
             .classynav ul li a {
                 font-weight: 600;
                 &:hover,
-                &:focus {
+                    &:focus {
                     font-weight: 600;
                 }
             }
@@ -606,7 +606,7 @@ textarea:focus {
                 color: $text-color2;
                 font-weight: 600;
                 &:hover,
-                &:focus {
+                    &:focus {
                     font-size: 14px;
                     color: $white-color;
                     background-color: $bg-default;
@@ -635,7 +635,7 @@ textarea:focus {
                     @include trans-duration(500ms);
                 }
                 &:hover,
-                &:focus {
+                    &:focus {
                     i {
                         color: $bg-default;
                     }
@@ -740,7 +740,7 @@ textarea:focus {
         right: 4%;
     }
     &:hover .owl-prev,
-    &:hover .owl-next {
+        &:hover .owl-next {
         opacity: 1;
         visibility: visible;
     }
@@ -848,7 +848,7 @@ textarea:focus {
             font-weight: 400;
             @include trans-duration(500ms);
             &:hover,
-            &:focus {
+                &:focus {
                 color: $bg-default;
             }
         }
@@ -933,7 +933,7 @@ textarea:focus {
                     font-size: 16px;
                 }
                 &:hover,
-                &:focus {
+                    &:focus {
                     color: $bg-default;
                 }
             }
@@ -1095,7 +1095,7 @@ textarea:focus {
                 }
             }
             &:hover,
-            &:focus {
+                &:focus {
                 background-color: $border-color;
             }
         }
@@ -1109,7 +1109,7 @@ textarea:focus {
             color: $text-color2;
             margin-bottom: 10px;
             &:hover,
-            &:focus {
+                &:focus {
                 color: $hover-color;
             }
         }
@@ -1122,7 +1122,7 @@ textarea:focus {
                 font-size: 12px;
                 color: #a4a4a4;
                 &:hover,
-                &:focus {
+                    &:focus {
                     color: $hover-color;
                 }
             }
@@ -1144,7 +1144,7 @@ textarea:focus {
             padding: 5px 0;
             color: #797979;
             &:hover,
-            &:focus {
+                &:focus {
                 color: $hover-color;
             }
         }
@@ -1161,7 +1161,7 @@ textarea:focus {
         border: none;
         color: $text-color2;
         &:hover,
-        &:focus {
+            &:focus {
             background-color: transparent;
             color: $hover-color;
         }
@@ -1230,7 +1230,7 @@ textarea:focus {
         right: 4%;
     }
     &:hover .owl-prev,
-    &:hover .owl-next {
+        &:hover .owl-next {
         opacity: 1;
         visibility: visible;
     }
@@ -1354,7 +1354,7 @@ textarea:focus {
                 margin-right: 0;
             }
             &:hover,
-            &:focus {
+                &:focus {
                 color: $hover-color;
             }
         }
@@ -1371,7 +1371,7 @@ textarea:focus {
             color: #4b4b4b;
             font-weight: 600;
             &:hover,
-            &:focus {
+                &:focus {
                 color: $hover-color;
             }
         }
@@ -1695,4 +1695,20 @@ textarea:focus {
         margin-bottom: 0;
         padding-left: 30px;
     }
+}
+
+#spider-web {
+    display: block;
+    position: absolute;
+    z-index: 101;
+    height: 29%;
+    transform: translate(-50%, -50%);
+}
+
+#spider {
+    display: block;
+    position: absolute;
+    z-index: 102;
+    height: 56px;
+    left: 8px;
 }
