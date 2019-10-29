@@ -8,8 +8,14 @@
         <title>Treats Factory | Treat yourself first</title>
         <link rel="icon" href="img/logos/logo_normal.jpg">
         <link rel="stylesheet" href="style.css">
+        <script src="js/node_modules/animejs/lib/anime.min.js"></script>
     </head>
     <body>
+        <img id="spider-web" src="img/objetos/spider-web-cobweb-svgrepo-com.svg" alt="web-spider">
+        <img id="spider" src="img/objetos/spider-svgrepo-com.svg" alt="spider">
+        <svg id="tela" style="position: absolute;z-index: 101;" height="210" width="100">
+        <line y1="40" style="stroke:rgb(144, 164, 174);stroke-width:1" y2="201" x1="37" x2="37"></line>
+        </svg>
         <!-- Preloader -->
         <div id="preloader">
             <i class="circle-preloader"></i>
@@ -247,6 +253,24 @@
         <script src="js/plugins/plugins.js"></script>
         <!-- Active js -->
         <script src="js/active.js"></script>
+        <script>
+            anime({
+                targets: 'line',
+                strokeDashoffset: [anime.setDashoffset, 0],
+                easing: 'easeInOutSine',
+                duration: 1500,
+                direction: 'alternate',
+                loop: false
+            });
+            anime({
+                targets: '#spider',
+                translateY: "315%",
+                duration: 1500,
+                direction: 'alternate',
+                easing: 'easeInOutSine',
+                loop: false
+            });
+        </script>
     </body>
 
 </html>
